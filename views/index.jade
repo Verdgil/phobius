@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    div(class="all")
+        div(class="question")
+            div(class="row")
+                div(class="col text_form", id="quest")=name
+            div(class="row")
+                div(class="col text_form clickable", id="desc0", onclick="check(0)", ontouchend="check(0)")=desc0
+                div(class="col text_form clickable", id="desc1", onclick="check(1)", ontouchend="check(1)")=desc1
+            div(class="row")
+                div(class="col text_form clickable", id="desc2", onclick="check(2)", ontouchend="check(2)")=desc2
+                div(class="col text_form clickable", id="desc3", onclick="check(3)", ontouchend="check(3)")=desc3
+            div(class="row", id="num_anw")
+        div(id="anw", style="visibility:hidden;")=anw
+
+    script(type="text/javascript", src="/javascripts/main.js")
+    script=""
